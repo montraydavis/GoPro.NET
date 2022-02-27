@@ -21,6 +21,7 @@ Supported API's
 ##### NightLapse Video/Photo Shutter
 ##### NightLapse/TimeLapse Interval
 ##### NightLapse/TimeLapse ISO Max
+---
 ### Photo:
 ##### Photo mode ISO Min
 ##### Burst mode ISO Min
