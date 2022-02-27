@@ -36,5 +36,6 @@ Supported API's
 ##### Quick Capture
 ##### Auto Off
 
+---
 
 Special thanks to @KonradIT for providing HTTP Endpoints [Found here](https://github.com/KonradIT/goprowifihack). 
