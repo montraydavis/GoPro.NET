@@ -31,6 +31,7 @@ Supported API's
 ##### Color
 ##### Sharpness
 ##### EV Comp
+---
 ### Setup:
 ##### Quick Capture
 ##### Auto Off
