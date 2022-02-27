@@ -37,4 +37,4 @@ Supported API's
 ##### Auto Off
 
 
-Special thanks to @KonradIT for providing HTTP Endpoints ([https://github.com/KonradIT/goprowifihack](Found here)). 
+Special thanks to @KonradIT for providing HTTP Endpoints [https://github.com/KonradIT/goprowifihack](Found here). 
