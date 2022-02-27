@@ -38,4 +38,4 @@ Supported API's
 
 ---
 
-Special thanks to @KonradIT for providing HTTP Endpoints [Found here](https://github.com/KonradIT/goprowifihack). 
+Special thanks to @[KonradIT](https://github.com/KonradIT/goprowifihack) for providing HTTP Endpoints [Found here](https://github.com/KonradIT/goprowifihack). 
