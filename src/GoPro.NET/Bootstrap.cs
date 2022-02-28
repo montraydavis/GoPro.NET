@@ -15,6 +15,12 @@ namespace GoPro.NET
 {
     public class Bootstrap
     {
+        public static IHost Initialize(string[] args)
+        {
+            var host = Bootstrap.CreateHostBuilder(args).Build();
+
+            return host;
+        }
         public static IServiceProvider Configure()
         {
             var services = new ServiceCollection();
@@ -38,34 +44,10 @@ namespace GoPro.NET
 
                     httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    services.AddTransient<Program>();
                     services.AddTransient(c => httpClient) ;
                     services.AddTransient(c => new Hero10(c.GetService<HttpClient>()));
                 });
         }
 
-        //public static void Initialize()
-        //{
-        //    //setup our DI
-        //    var serviceProvider = new ServiceCollection()
-        //        .AddLogging()
-        //        .AddSingleton<IHero, Hero10>()
-        //        .BuildServiceProvider();
-
-        //    //configure console logging
-        //    serviceProvider
-        //        .GetService<ILoggerFactory>()
-        //        .AddConsole();
-
-        //    var logger = serviceProvider.GetService<ILoggerFactory>()
-        //        .CreateLogger<Program>();
-        //    logger.LogDebug("Starting application");
-
-        //    //do the actual work here
-        //    var bar = serviceProvider.GetService<IBarService>();
-        //    bar.DoSomeRealWork();
-
-        //    logger.LogDebug("All done!");
-        //}
     }
 }

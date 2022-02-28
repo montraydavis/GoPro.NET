@@ -7,7 +7,7 @@ using GoPro.NET.Models;
 
 namespace GoPro.NET.Repositories.GoPro.Hero
 {
-    internal interface IHero
+    public interface IHero
     {
         Task<bool> SetColor(HeroColor color);
         Task<bool> SetSharpness(HeroSharpness sharpness);

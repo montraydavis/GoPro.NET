@@ -8,7 +8,7 @@ using GoPro.NET.Repositories.GoPro.Hero;
 
 namespace GoPro.NET.Repositories.GoPro.Hero10
 {
-    internal class Hero10 : BaseHero
+    public class Hero10 : BaseHero
     {
 
 

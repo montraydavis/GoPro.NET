@@ -29,6 +29,26 @@ namespace GoPro.NET.Repositories.GoPro.Hero
         const string _timelapseMultiEVCompUri = "118";
         const string _timelapseQuickCaptureUri = "54";
         const string _autoOffUri = "59";
+        const string _bitRateUri = "67";
+        const string _audioProtuneUri = "79";
+        const string _gpsProtuneUri = "83";
+        const string _lensViewUri = "121";
+        const string _bitRateHighuri = "124";
+        const string _outputUri = "125";
+        const string _megapixelsUri = "133";
+        const string _durationUri = "157";
+        const string _screenSaveFrontUri = "158";
+        const string _screenSaveRearUri = "159";
+        const string _bitrateHighStandardUri = "160";
+        const string _defaultPresetUri = "161";
+        const string _maxModLensEnableUri = "162";
+        const string _maxLensModUri = "163";
+        const string _mediaModekUri = "164";
+        const string _horizonLockUri = "166";
+        const string _hindsightUri = "167";
+        const string _scheduleCapturUri = "168";
+        const string _modsUri = "169";
+        const string _inContextualSettingsUri = "170";
 
 
 
@@ -101,7 +121,7 @@ namespace GoPro.NET.Repositories.GoPro.Hero
             await GetSetting(_timelapseMultiProtuneUri, Convert.ToInt32(onOff).ToString());
 
         public async virtual Task<bool> SetTimelapseMultiWhiteBalance(HeroWhiteBalance whiteBalance) =>
-            await GetSetting(_whiteBalanceUri, Convert.ToInt32(whiteBalance).ToString());
+            await GetSetting(_timelapseMultiWhiteBalanceUri, Convert.ToInt32(whiteBalance).ToString());
 
         public async virtual Task<bool> SetTimelapseMultiColor(HeroColor color) =>
             await GetSetting(_timelapseMultiColorUri, Convert.ToInt32(color).ToString());
@@ -117,6 +137,66 @@ namespace GoPro.NET.Repositories.GoPro.Hero
 
         public async virtual Task<bool> SetAutoOff(HeroAutoOff autoOff) =>
             await GetSetting(_autoOffUri, Convert.ToInt32(autoOff).ToString());
+
+        public async virtual Task<bool> SetBitrate(HeroBitrate bitRate) =>
+            await GetSetting(_bitRateUri, Convert.ToInt32(bitRate).ToString());
+
+        public async virtual Task<bool> SetAudioProtune(HeroBit onOff) =>
+            await GetSetting(_audioProtuneUri, Convert.ToInt32(onOff).ToString());
+
+        public async virtual Task<bool> SetGPSProtune(HeroBit onOff) =>
+            await GetSetting(_gpsProtuneUri, Convert.ToInt32(onOff).ToString());
+
+        public async virtual Task<bool> SetLensView(HeroLensView lensView) =>
+            await GetSetting(_lensViewUri, Convert.ToInt32(lensView).ToString());
+
+        public async virtual Task<bool> SetBitrateHigh(HeroBit onOff) =>
+            await GetSetting(_bitRateHighuri, Convert.ToInt32(onOff).ToString());
+
+        public async virtual Task<bool> SetOutput(HeroOutput output) =>
+            await GetSetting(_outputUri, Convert.ToInt32(output).ToString());
+
+        public async virtual Task<bool> SetMegapixels(HeroMegapixels megapixels) =>
+            await GetSetting(_megapixelsUri, Convert.ToInt32(megapixels).ToString());
+
+        public async virtual Task<bool> SetDuration(HeroDuration duration) =>
+            await GetSetting(_durationUri, Convert.ToInt32(duration).ToString());
+
+        public async virtual Task<bool> SetScreensaveFrontTime(HeroScreensaverFrontTime duration) =>
+            await GetSetting(_screenSaveFrontUri, Convert.ToInt32(duration).ToString());
+
+        public async virtual Task<bool> SetScreensaveRearTime(HeroScreensaverRearTime duration) =>
+            await GetSetting(_screenSaveRearUri, Convert.ToInt32(duration).ToString());
+
+        public async virtual Task<bool> SetBitrateHighStandard(HeroBitrate bitrate) =>
+            await GetSetting(_bitrateHighStandardUri, Convert.ToInt32(bitrate).ToString());
+
+        public async virtual Task<bool> SetDefaultPreset(HeroDefaultPreset defaultPreset) =>
+            await GetSetting(_defaultPresetUri, Convert.ToInt32(defaultPreset).ToString());
+
+        public async virtual Task<bool> SetMaxModLensOnOff(HeroBit onOff) =>
+            await GetSetting(_maxModLensEnableUri, Convert.ToInt32(onOff).ToString());
+
+        public async virtual Task<bool> SetMaxModLensEnable(HeroBit onOff) =>
+            await GetSetting(_maxLensModUri, Convert.ToInt32(onOff).ToString());
+
+        public async virtual Task<bool> SetMediaMod(HeroMediaMod mediaMod) =>
+            await GetSetting(_mediaModekUri, Convert.ToInt32(mediaMod).ToString());
+
+        public async virtual Task<bool> SetHorizonLockOnOff(HeroMediaMod onOff) =>
+            await GetSetting(_horizonLockUri, Convert.ToInt32(onOff).ToString());
+
+        public async virtual Task<bool> SetHindsightOnOff(HeroHindsight hindsight) =>
+            await GetSetting(_hindsightUri, Convert.ToInt32(hindsight).ToString());
+
+        public async virtual Task<bool> SetScheduleCaptureOff() =>
+            await GetSetting(_scheduleCapturUri, Convert.ToInt32(HeroBit.Off).ToString());
+
+        public async virtual Task<bool> SetModMediaLevels(HeroMediaModLevel mediaMod) =>
+            await GetSetting(_modsUri, Convert.ToInt32(mediaMod).ToString());
+
+        public async virtual Task<bool> SetContextualSettingsOnOff(HeroBit onOff) =>
+            await GetSetting(_inContextualSettingsUri, Convert.ToInt32(onOff).ToString());
 
 
 
